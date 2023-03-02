@@ -179,7 +179,7 @@ header .container nav ul li:not(:last-of-type){
 .features .container{
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
-    padding: 70px;
+    padding: 30px;
     text-align: center;
     line-height: 30px;
 
@@ -197,27 +197,16 @@ header .container nav ul li:not(:last-of-type){
 }
 /* end features */
 
-.services{
-    position: relative;
-
-}
-
-.services .min_tital{
-    position: absolute;
+.min_tital{
+    text-align: center;
     padding: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%); 
 
 }
 
-
-.services .min_tital h1{
-    font-weight: 900;
+.min_tital h1{
+    font-weight: 800;
     color: #ebeced;
-    font-size: 120px;
-}
-
-.services .min_tital p{
-    color:#797979;
+    font-size: 100px;
+    letter-spacing: -3px;
+    margin: 0;
 }
