@@ -55,6 +55,10 @@ body{
     .min_tital .min_tital_heading{
         font-size: 4rem;
     }
+
+    .container{
+        max-width: 760px;
+    }
 }
 
 /* small screen */
@@ -242,6 +246,25 @@ header .container nav ul li:not(:last-of-type){
     position: relative;
 }
 
+/* mobile screen */
+@media (max-width:761px){
+    .min_tital{
+        padding: 45px;
+    }
+    .min_tital .min_tital_heading{
+        font-size: 4rem;
+    }
+
+    .container{
+        max-width: 760px;
+    }
+
+    .services .container .box_serv_img{
+        display: none;
+    }
+}
+
+
 .services .container .box_serv_img img{
     height: 350px;
 
@@ -276,3 +299,100 @@ header .container nav ul li:not(:last-of-type){
     line-height: 30px;
 }
 /* end services */
+
+
+/* start portfolio */
+.portfolio{
+    background-color: var(--secation-background);
+}
+
+.portfolio .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+}
+
+
+.portfolio .container .box_port{
+    background-color: white;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+
+.portfolio .container .box_port img{
+    height: 232px;
+    max-width: 100%;
+}
+
+.portfolio .container .box_port h3{ 
+    text-align: start;
+    padding-left: 15px;
+}
+
+.portfolio .container .box_port p{
+    text-align: start;
+    padding-left: 15px;
+    color: #797979;
+    line-height: 30px;
+}
+
+
+/* end portfolio */
+
+/* start about */
+.about .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
+    align-items: center;
+}
+
+
+.about .container .box_about img{
+    height: 350px;
+}
+/* end about */
+/* start contact */
+.contact {
+    background-color: var(--secation-background);
+    text-align: center;
+}
+
+.contact .container p:first-child{
+    color: var(--secand-color);
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: none;
+}
+
+
+.contact .container a:nth-child(2){
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: 900;
+    display: block;
+}
+
+.contact .container p:nth-child(3){
+    display: inline-block;
+}
+/* end contact */
+
+/* start footer */
+footer{
+    background-color: var(--secand-color);
+}
+
+
+footer .container{
+    text-align: center;
+    padding: 13px;
+    color: white;
+    font-size: 20px;
+}
+
+footer .container span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+/* end footer */
